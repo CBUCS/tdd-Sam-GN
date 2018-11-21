@@ -146,7 +146,7 @@ public class mBinaryTree<T> implements TreeInterface<T> {
     }
 
     //implementing BFS
-    public void BFS() {
+   /* public void BFS() {
         //uses a queue to know which item to print
         System.out.print("BFS: ");
         Queue<BinaryTreeNode<T>> queue= new ConcurrentLinkedQueue<BinaryTreeNode<T>>();
@@ -168,10 +168,10 @@ public class mBinaryTree<T> implements TreeInterface<T> {
         }
         System.out.println("");
 
-    }
+    }*/
 
     // implementing a DFS
-    public  void DFS(){
+/*    public  void DFS(){
         //uses a stack to know which item to print.
         if(root == null)
             return;
@@ -189,11 +189,16 @@ public class mBinaryTree<T> implements TreeInterface<T> {
         }
         System.out.println("");
 
-    }
+    }*/
 
     public boolean accept(Visitor v){
-        v.visit(this.root);
-        return true;
+        if(this.root==null) {
+            return false;
+        }
+        else {
+            v.visit(this.root);
+            return true;
+        }
     }
 
     public BinaryTreeNode<T> getRoot(){

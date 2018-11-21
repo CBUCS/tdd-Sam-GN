@@ -16,6 +16,7 @@ public class MainTest {
     @Test
     public void accept(){
         tree = new mBinaryTree<Integer>();
+        tree.add(1);
         v = new DFSVisitor();
         Assertions.assertTrue(tree.accept(v));
     }
