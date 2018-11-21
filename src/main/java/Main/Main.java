@@ -1,4 +1,7 @@
 package Main;
+import Classes.BFSVisitor;
+import Classes.DFSVisitor;
+import Classes.Visitor;
 import Classes.mBinaryTree;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -13,7 +16,14 @@ public class Main {
         tree.add(6);
         tree.add(2);
         tree.add(5);
+
+        Visitor BFS = new BFSVisitor();
+        Visitor DFS = new DFSVisitor();
+
+        tree.accept(BFS);
+        tree.accept(DFS);
     }
+
 }
 
 

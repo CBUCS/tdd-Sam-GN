@@ -26,6 +26,7 @@ public class BFSVisitor implements Visitor {
 
         }
 
+        System.out.print("\n");
         return true;
     }
 }

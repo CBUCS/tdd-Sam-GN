@@ -17,6 +17,7 @@ public class DFSVisitor implements Visitor {
                 res.add(top.getRight());
 
         }
+        System.out.print("\n");
         return true;
     }
 }
