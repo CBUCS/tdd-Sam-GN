@@ -1,5 +1,5 @@
 package Classes;
 
 public interface Visitor {
-    void visit (mBinaryTree pTree);
+    boolean visit (BinaryTreeNode pRoot);
 }

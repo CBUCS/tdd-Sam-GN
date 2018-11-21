@@ -1,6 +1,6 @@
 package Classes;
 
-public class BFSVisitor implements Visitor {
+public class DFSVisitor implements Visitor {
     @Override
     public boolean visit(BinaryTreeNode pRoot) {
         return false;

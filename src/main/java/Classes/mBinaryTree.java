@@ -191,8 +191,9 @@ public class mBinaryTree<T> implements TreeInterface<T> {
 
     }
 
-    public boolean accept(){
-        return false;
+    public boolean accept(Visitor v){
+        v.visit(this.root);
+        return true;
     }
 
     public BinaryTreeNode<T> getRoot(){
