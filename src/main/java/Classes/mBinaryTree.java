@@ -8,7 +8,7 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 public class mBinaryTree<T> implements TreeInterface<T> {
     //Technically this is a binary search tree. But still a binary search tree is kind of a binary tree.
     private BinaryTreeNode<T> root;
-    private ArrayList<Strategy> strategies;
+
 
 
     //to add new items to the tree
@@ -190,6 +190,11 @@ public class mBinaryTree<T> implements TreeInterface<T> {
         System.out.println("");
 
     }
+
+    public boolean accept(){
+        return false;
+    }
+
     public BinaryTreeNode<T> getRoot(){
         return this.root;
     }

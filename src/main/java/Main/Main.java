@@ -13,12 +13,6 @@ public class Main {
         tree.add(6);
         tree.add(2);
         tree.add(5);
-
-        logger.info("Hello, world");
-
-        tree.print();
-        tree.BFS();
-        tree.DFS();
     }
 }
 

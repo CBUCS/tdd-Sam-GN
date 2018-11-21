@@ -13,9 +13,9 @@ public class MainTest {
 
 
     @Test
-    public void treeNotNull(){
+    public void accept(){
         tree = new mBinaryTree<Integer>();
-        Assertions.assertNotNull(tree);
+        Assertions.assertTrue(tree.accept());
     }
 }
 
